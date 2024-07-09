@@ -14,14 +14,16 @@ const colors = {
     "#33FFF1",
   ],
   linearGradients: [
-    "linear-gradient(to right, #ff7e5f, #feb47b)",
-    "linear-gradient(to right, #00c6ff, #0072ff)",
+    "linear-gradient(to right, #ff7e5f, #f1cfb5)",
+    "linear-gradient(to right, #8fd0e2, #0072ff)",
     "linear-gradient(to right, #a1ffce, #faffd1)",
+    "linear-gradient(to right, #eeaeca,#94bbe9)",
   ],
   radialGradients: [
-    "radial-gradient(circle, #ff7e5f, #feb47b)",
-    "radial-gradient(circle, #00c6ff, #0072ff)",
+    "radial-gradient(circle, #ff7e5f, #ddc8b6)",
+    "radial-gradient(circle, #9cd3e2, #0072ff)",
     "radial-gradient(circle, #a1ffce, #faffd1)",
+    "radial-gradient(circle, #bcc689, #e345fc)",
   ],
 };
 
