@@ -23,7 +23,7 @@ The Project is deployed on Render
 
 1. Foreground and Background Customization: Users have the ability to change both foreground and background colors of the portfolio layout.
 
-2. Color Options: Users can choose from solid colors, linear gradients, and radial gradients for styling elements, as demonstrated in the reference image.
+2. Color Options: Users can choose from solid colors, linear gradients, and radial gradients for styling elements.
 
 3. Editable Portfolio Details: Portfolio details such as name, designation, location, and bio are editable. Users can click directly on these fields in the preview screen or use forms for input. Redux manages the entire state for seamless updates.
 
