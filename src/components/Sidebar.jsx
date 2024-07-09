@@ -3,7 +3,7 @@ import { VStack, Text } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
-    <VStack align="start" p="4" bg="gray.100" h="100vh" w="20%">
+    <VStack align="start" p="4" bg="gray.100"  w="20%">
       <Text fontSize="xl" fontWeight="bold">
         Logo Here
       </Text>

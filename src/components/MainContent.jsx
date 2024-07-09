@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
-import { Box, Heading, VStack, Input, Button, Textarea, FormControl, FormLabel, Flex, Select, Image } from '@chakra-ui/react';
-import { useSelector, useDispatch } from 'react-redux';
-import { updateProfile, loadProfile } from '../store/profileSlice';
-import ThemeSelector from './ThemeSelector';
-import Resume from './Resume';
+import React, { useState } from "react";
+import {
+  Box,
+  Heading,
+  VStack,
+  Input,
+  Button,
+  Textarea,
+  FormControl,
+  FormLabel,
+  Flex,
+  Select,
+  Image,
+} from "@chakra-ui/react";
+import { useSelector, useDispatch } from "react-redux";
+import { updateProfile, loadProfile } from "../store/profileSlice";
+import ThemeSelector from "./ThemeSelector";
+import Resume from "./Resume";
 
 const MainContent = () => {
   const dispatch = useDispatch();
@@ -31,13 +43,13 @@ const MainContent = () => {
   };
 
   const handleSave = () => {
-    localStorage.setItem('profile', JSON.stringify(profile));
-    alert('Profile saved!');
+    localStorage.setItem("profile", JSON.stringify(profile));
+    alert("Profile saved!");
   };
 
   return (
     <Flex p="4" w="full">
-      <Box w="60%">
+      <Box w="60%" >
         <Heading>Themes</Heading>
         <ThemeSelector />
         <Box mt="8">
@@ -67,31 +79,79 @@ const MainContent = () => {
               name="bio"
               onChange={handleInputChange}
             />
-            <FormControl>
-              <FormLabel>Background Image</FormLabel>
-              <Input type="file" name="backgroundImage" onChange={handleImageUpload} />
-              {profile.backgroundImage && <Image src={profile.backgroundImage} alt="Background" boxSize="100px" objectFit="cover" mt="2" />}
-            </FormControl>
-            <FormControl>
-              <FormLabel>Profile Image</FormLabel>
-              <Input type="file" name="profileImage" onChange={handleImageUpload} />
-              {profile.profileImage && <Image src={profile.profileImage} alt="Profile" boxSize="100px" objectFit="cover" mt="2" />}
-            </FormControl>
-            <FormControl>
+            <Box display={"flex"} justifyContent={"space-evenly"}>
+              <FormControl>
+                <FormLabel>Background Image</FormLabel>
+                <Input
+                  type="file"
+                  name="backgroundImage"
+                  onChange={handleImageUpload}
+                />
+                {profile.backgroundImage && (
+                  <Image
+                    src={profile.backgroundImage}
+                    alt="Background"
+                    boxSize="100px"
+                    objectFit="cover"
+                    mt="2"
+                  />
+                )}
+              </FormControl>
+              <FormControl>
+                <FormLabel>Profile Image</FormLabel>
+                <Input
+                  type="file"
+                  name="profileImage"
+                  onChange={handleImageUpload}
+                />
+                {profile.profileImage && (
+                  <Image
+                    src={profile.profileImage}
+                    alt="Profile"
+                    boxSize="100px"
+                    objectFit="cover"
+                    mt="2"
+                  />
+                )}
+              </FormControl>
+            </Box>
+            <FormControl mb={"3"}>
               <FormLabel>Font Style</FormLabel>
-              <Select name="fontStyle" value={profile.fontStyle} onChange={handleInputChange}>
+              <Select
+                name="fontStyle"
+                value={profile.fontStyle}
+                onChange={handleInputChange}
+              >
                 <option value="Poppins">Poppins</option>
                 <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Garamond">Garamond</option>
+                <option value="Verdanal">Verdana</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Courier Newl">Courier New</option>
+                <option value="Brush Script MT">Brush Script MT</option>
+                <option value="Lucida Handwritingl">Lucida Handwriting</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="	Copperplate"> Copperplate</option>
+                <option value="Papyrus">Papyrus</option>
                 <option value="Times New Roman">Times New Roman</option>
               </Select>
             </FormControl>
           </VStack>
         </Box>
-        <Button mt="4" colorScheme="teal" onClick={handleSave}>Save</Button>
-        <Button mt="4" colorScheme="blue" onClick={() => setShowResume(!showResume)}>
-          {showResume ? 'Hide Resume' : 'Show Resume'}
-        </Button>
+
+        <div style={{ display: "flex", gap: "10px" }}>
+          <Button colorScheme="teal" onClick={handleSave}>
+            Save
+          </Button>
+
+          <Button colorScheme="blue" onClick={() => setShowResume(!showResume)}>
+            {showResume ? "Hide Resume" : "Show Resume"}
+          </Button>
+        </div>
       </Box>
+
       {showResume && (
         <Box w="40%" ml="4">
           <Heading size="md">Your Portfolio</Heading>

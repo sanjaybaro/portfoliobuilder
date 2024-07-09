@@ -1,6 +1,6 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { Box, Text, VStack, Avatar, Image,} from '@chakra-ui/react';
+import React from "react";
+import { useSelector } from "react-redux";
+import { Box, Text, VStack, Avatar, Image } from "@chakra-ui/react";
 
 const Resume = () => {
   const profile = useSelector((state) => state.profile);
@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <Box
       bg={theme}
-      color={theme === '#000000' ? '#FFFFFF' : '#000000'}
+      color={theme === "#000000" ? "#FFFFFF" : "#000000"}
       p="4"
       borderRadius="md"
       w="full"
@@ -19,7 +19,13 @@ const Resume = () => {
       <VStack align="start" spacing="4">
         {profile.backgroundImage && (
           <Box position="relative" w="full" h="200px" overflow="hidden">
-            <Image src={profile.backgroundImage} alt="Background" w="full" h="200px" objectFit="cover" />
+            <Image
+              src={profile.backgroundImage}
+              alt="Background"
+              w="full"
+              h="200px"
+              objectFit="cover"
+            />
             <Avatar
               size="2xl"
               name={profile.name}
@@ -34,8 +40,11 @@ const Resume = () => {
             />
           </Box>
         )}
+    
         <Box pt="10px" w="full">
-          <Text fontSize="2xl" fontWeight="bold">{profile.name}</Text>
+          <Text fontSize="2xl" fontWeight="bold">
+            {profile.name}
+          </Text>
           <Text fontSize="lg">{profile.profession}</Text>
           <Text fontSize="lg">{profile.location}</Text>
           <Text fontSize="md">{profile.bio}</Text>
