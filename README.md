@@ -37,3 +37,16 @@ The Project is deployed on Render
 1. Clone the repository: `git clone https://github.com/sanjaybaro/portfoliobuilder`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
+
+## Contact
+For any inquiries or support, you can reach me at [sanjaybaro2017@gmail.com](sanjaybaro2017@gmail.com).
+
+## UI Screenshots
+
+**UI 1**
+![Macbook-Air-127 0 0 1](https://github.com/sanjaybaro/portfoliobuilder/assets/123923491/d185701c-bb94-471a-8e65-334e2e0f8593)
+**UI 2**
+![Macbook-Air-127 0 0 1 (1)](https://github.com/sanjaybaro/portfoliobuilder/assets/123923491/7ed014dd-2962-4c9a-8107-54970d414c5f)
+**UI 3**
+![Macbook-Air-127 0 0 1 (2)](https://github.com/sanjaybaro/portfoliobuilder/assets/123923491/85defaad-366b-429d-bd0b-70ff1d12ef17)
+
