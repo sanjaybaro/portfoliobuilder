@@ -5,7 +5,7 @@ It is a customizable portfolio builder with a modern user interface. Users can d
 ## Deployed Link 
 The Project is deployed on Render
 <div align="center">
-  <a href="" target="_blank">Visit bookStore.com</a>
+  <a href="https://portfoliobuilder-rtw1.onrender.com/" target="_blank">Visit portfolioBuilder.com</a>
 </div>
 
 ## Tech Stack
