@@ -32,3 +32,8 @@ The Project is deployed on Render
 
 6. Responsive Design: The UI is designed to be fully responsive, ensuring optimal usability and display on smaller mobile screens as well as larger desktop monitors.
 
+## Run Locally (getting started)
+
+1. Clone the repository: `git clone https://github.com/sanjaybaro/portfoliobuilder`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
