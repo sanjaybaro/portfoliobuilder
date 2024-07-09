@@ -7,6 +7,11 @@ const initialState = {
   bio: "",
   backgroundImage: "",
   profileImage: "",
+  themeColor: "",
+  fontStyle: "Poppins",
+  solidColor: "",
+  linearGradient: "",
+  radialGradient: "",
 };
 
 const profileSlice = createSlice({
