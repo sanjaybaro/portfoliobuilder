@@ -7,6 +7,7 @@ const colors = {
   solids: [
     "#000000",
     "#ffffff",
+    "#c0baba",
     "#FF5733",
     "#33FF57",
     "#3357FF",
@@ -18,6 +19,8 @@ const colors = {
     "linear-gradient(to right, #8fd0e2, #0072ff)",
     "linear-gradient(to right, #a1ffce, #faffd1)",
     "linear-gradient(to right, #eeaeca,#94bbe9)",
+    "linear-gradient(to right, #a0b43a,#458afc)",
+    "linear-gradient(to right, #22c1c3,#263619)",
   ],
   radialGradients: [
     "radial-gradient(circle, #ff7e5f, #ddc8b6)",
@@ -25,6 +28,7 @@ const colors = {
     "radial-gradient(circle, #a1ffce, #faffd1)",
     "radial-gradient(circle, #bcc689, #e345fc)",
   ],
+  foregroundColor: ["#000000", "#ffffff"],
 };
 
 const ThemeSelector = () => {
@@ -44,6 +48,9 @@ const ThemeSelector = () => {
         </Button>
         <Button onClick={() => setCurrentSelection("radialGradients")}>
           Radial Gradients
+        </Button>
+        <Button onClick={() => setCurrentSelection("foregroundColor")}>
+          Foreground Color
         </Button>
       </Box>
       <Grid

@@ -49,7 +49,7 @@ const MainContent = () => {
 
   return (
     <Flex p="4" w="full">
-      <Box w="60%" >
+      <Box w="60%">
         <Heading>Themes</Heading>
         <ThemeSelector />
         <Box mt="8">
@@ -130,10 +130,8 @@ const MainContent = () => {
                 <option value="Helvetica">Helvetica</option>
                 <option value="Courier Newl">Courier New</option>
                 <option value="Brush Script MT">Brush Script MT</option>
-                <option value="Lucida Handwritingl">Lucida Handwriting</option>
                 <option value="Monaco">Monaco</option>
                 <option value="Lucida Console">Lucida Console</option>
-                <option value="	Copperplate"> Copperplate</option>
                 <option value="Papyrus">Papyrus</option>
                 <option value="Times New Roman">Times New Roman</option>
               </Select>

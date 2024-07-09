@@ -40,7 +40,7 @@ const Resume = () => {
             />
           </Box>
         )}
-    
+
         <Box pt="10px" w="full">
           <Text fontSize="2xl" fontWeight="bold">
             {profile.name}
