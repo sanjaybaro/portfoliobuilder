@@ -17,20 +17,20 @@ The Project is deployed on Render
      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
      <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
      <img src="https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white" />
+     <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
 </div>
 
 ## Features
-1. Dynamic Theme Change: Users can select colors on the left side to dynamically change the theme of the preview screen (right side).
 
-2. Foreground and Background Customization: Users have the ability to change both foreground and background colors of the portfolio layout.
+1. Foreground and Background Customization: Users have the ability to change both foreground and background colors of the portfolio layout.
 
-3. Color Options: Users can choose from solid colors, linear gradients, and radial gradients for styling elements, as demonstrated in the reference image.
+2. Color Options: Users can choose from solid colors, linear gradients, and radial gradients for styling elements.
 
-4. Editable Portfolio Details: Portfolio details such as name, designation, location, and bio are editable. Users can click directly on these fields in the preview screen or use forms for input. Redux manages the entire state for seamless updates.
+3. Editable Portfolio Details: Portfolio details such as name, designation, location, and bio are editable. Users can click directly on these fields in the preview screen or use forms for input. Redux manages the entire state for seamless updates.
 
-5. Local Storage Integration: Each portfolio's information can be saved in Local Storage. The UI displays this data in a tabular format, allowing users to select any portfolio from the table for viewing or further editing.
+4. Local Storage Integration: Each portfolio's information can be saved in Local Storage. The UI displays this data in a tabular format, allowing users to select any portfolio from the table for viewing or further editing.
 
-6. Responsive Design: The UI is designed to be fully responsive, ensuring optimal usability and display on smaller mobile screens as well as larger desktop monitors.
+5. Responsive Design: The UI is designed to be fully responsive, ensuring optimal usability and display on smaller mobile screens as well as larger desktop monitors.
 
 ## Run Locally (getting started)
 
